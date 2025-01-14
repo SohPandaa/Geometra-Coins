@@ -11,16 +11,15 @@ public class ModItems {
 
     public static final DeferredItem<Item> COIN1 = ITEMS.register("coin1",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> COIN5 = ITEMS.register("coin5",
+    public static final DeferredItem<Item> COIN4 = ITEMS.register("coin4",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> COIN10 = ITEMS.register("coin10",
+    public static final DeferredItem<Item> COIN16 = ITEMS.register("coin16",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> COIN20 = ITEMS.register("coin20",
+    public static final DeferredItem<Item> COIN64 = ITEMS.register("coin64",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> COIN50 = ITEMS.register("coin50",
+    public static final DeferredItem<Item> COIN256 = ITEMS.register("coin256",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> COIN100 = ITEMS.register("coin100",
-            () -> new Item(new Item.Properties()));
+
 
 
     public static void register(IEventBus eventBus) {

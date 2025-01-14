@@ -1,10 +1,10 @@
 {
-  "item.geometracoins.coin1": "$1",
-  "item.geometracoins.coin5": "$5",
-  "item.geometracoins.coin10": "$10",
-  "item.geometracoins.coin20": "$20",
-  "item.geometracoins.coin50": "$50",
-  "item.geometracoins.coin100": "$100",
+  "item.geometracoins.coin1": "Wooden Coin",
+  "item.geometracoins.coin4": "Copper Coin",
+  "item.geometracoins.coin16": "Iron Coin",
+  "item.geometracoins.coin64": "Gold Coin",
+  "item.geometracoins.coin256": "Diamond Coin",
+
 
 
   "creativetab.geometracoins.geometra_coins": "Geometra Coins"

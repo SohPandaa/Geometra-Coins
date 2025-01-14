@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "geometracoins:item/coin10"
+    "layer0": "geometracoins:item/coin4"
   }
 }

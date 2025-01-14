@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "geometracoins:coin1"
+    },
+    {
+      "item": "geometracoins:coin1"
+    },
+    {
+      "item": "geometracoins:coin1"
+    },
+    {
+      "item": "geometracoins:coin1"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "geometracoins:coin4"
+  }
+
+}
