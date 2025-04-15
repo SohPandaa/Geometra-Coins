@@ -19,6 +19,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> COIN256 = ITEMS.register("coin256",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> COIN1024 = ITEMS.register("coin1024",
+            () -> new Item(new Item.Properties()));
 
 
 

@@ -1,9 +1,10 @@
 {
-  "item.geometracoins.coin1": "Wooden Coin",
-  "item.geometracoins.coin4": "Copper Coin",
-  "item.geometracoins.coin16": "Iron Coin",
-  "item.geometracoins.coin64": "Gold Coin",
-  "item.geometracoins.coin256": "Diamond Coin",
+  "item.geometracoins.coin1": "Copper Coin",
+  "item.geometracoins.coin4": "Iron Coin",
+  "item.geometracoins.coin16": "Gold Coin",
+  "item.geometracoins.coin64": "Diamond Coin",
+  "item.geometracoins.coin256": "Emerald Coin",
+  "item.geometracoins.coin1024": "Netherite Coin",
 
 
 

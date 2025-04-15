@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.COIN16);
                                 output.accept(ModItems.COIN64);
                                 output.accept(ModItems.COIN256);
+                                output.accept(ModItems.COIN1024);
 
                             }
                     )
