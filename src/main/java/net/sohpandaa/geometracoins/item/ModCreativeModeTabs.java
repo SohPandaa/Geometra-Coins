@@ -16,7 +16,7 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, GeometraCoins.MOD_ID);
 
     public static final Supplier<CreativeModeTab> GEOMETRA_COINS_TAB = CREATIVE_MODE_TAB.register("geometra_coins_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.COIN256.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.GOLD_COIN.get()))
                     .title(Component.translatable("creativetab.geometracoins.geometra_coins"))
                     .displayItems(
                             (itemDisplayParameters, output) -> {
@@ -25,7 +25,13 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.COIN16);
                                 output.accept(ModItems.COIN64);
                                 output.accept(ModItems.COIN256);
-                                output.accept(ModItems.COIN1024);
+                                output.accept(ModItems.COPPER_COIN);
+                                output.accept(ModItems.IRON_COIN);
+                                output.accept(ModItems.GOLD_COIN);
+                                output.accept(ModItems.DIAMOND_COIN);
+                                output.accept(ModItems.EMERALD_COIN);
+                                output.accept(ModItems.NETHERITE_COIN);
+
 
                             }
                     )

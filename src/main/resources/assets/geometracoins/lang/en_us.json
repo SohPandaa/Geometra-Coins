@@ -1,10 +1,16 @@
 {
-  "item.geometracoins.coin1": "Copper Coin",
-  "item.geometracoins.coin4": "Iron Coin",
-  "item.geometracoins.coin16": "Gold Coin",
-  "item.geometracoins.coin64": "Diamond Coin",
-  "item.geometracoins.coin256": "Emerald Coin",
-  "item.geometracoins.coin1024": "Netherite Coin",
+  "item.geometracoins.coin1": "§cCounterfeit §fWooden Coin",
+  "item.geometracoins.coin4": "§cCounterfeit §fCopper Coin",
+  "item.geometracoins.coin16": "§cCounterfeit §fIron Coin",
+  "item.geometracoins.coin64": "§cCounterfeit §fGold Coin Coin",
+  "item.geometracoins.coin256": "§cCounterfeit §fDiamond Coin",
+  "item.geometracoins.copper_coin": "Copper Coin",
+  "item.geometracoins.iron_coin": "Iron Coin",
+  "item.geometracoins.gold_coin": "Gold Coin",
+  "item.geometracoins.diamond_coin": "Diamond Coin",
+  "item.geometracoins.emerald_coin": "Emerald Coin",
+  "item.geometracoins.netherite_coin": "Netherite Coin",
+
 
 
 

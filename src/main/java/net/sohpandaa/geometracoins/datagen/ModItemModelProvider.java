@@ -18,6 +18,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.COIN16.get());
         basicItem(ModItems.COIN64.get());
         basicItem(ModItems.COIN256.get());
-        basicItem(ModItems.COIN1024.get());
+        basicItem(ModItems.COPPER_COIN.get());
+        basicItem(ModItems.IRON_COIN.get());
+        basicItem(ModItems.GOLD_COIN.get());
+        basicItem(ModItems.DIAMOND_COIN.get());
+        basicItem(ModItems.EMERALD_COIN.get());
+        basicItem(ModItems.NETHERITE_COIN.get());
+
     }
 }

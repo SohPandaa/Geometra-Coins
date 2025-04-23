@@ -9,6 +9,8 @@ import net.sohpandaa.geometracoins.GeometraCoins;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(GeometraCoins.MOD_ID);
 
+
+    //OLD COINS
     public static final DeferredItem<Item> COIN1 = ITEMS.register("coin1",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> COIN4 = ITEMS.register("coin4",
@@ -19,7 +21,19 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> COIN256 = ITEMS.register("coin256",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> COIN1024 = ITEMS.register("coin1024",
+
+    //NEW COINS
+    public static final DeferredItem<Item> COPPER_COIN = ITEMS.register("copper_coin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IRON_COIN = ITEMS.register("iron_coin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GOLD_COIN = ITEMS.register("gold_coin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DIAMOND_COIN = ITEMS.register("diamond_coin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> EMERALD_COIN = ITEMS.register("emerald_coin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> NETHERITE_COIN = ITEMS.register("netherite_coin",
             () -> new Item(new Item.Properties()));
 
 

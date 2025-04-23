@@ -18,65 +18,63 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput){
 
-        List<ItemLike> COIN_SMELTABLES = List.of(ModItems.COIN4);
+        List<ItemLike> IRON_COIN_SMELTABLES = List.of(ModItems.IRON_COIN);
+        List<ItemLike> GOLD_COIN_SMELTABLES = List.of(ModItems.GOLD_COIN);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COIN4.get())
-                .pattern("XX")
-                .pattern("XX")
-                .define('X', ModItems.COIN1)
-                .unlockedBy("has_coin_1", has(ModItems.COIN1)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.IRON_COIN.get())
+                        .pattern("xx")
+                        .pattern("xx")
+                        .define('x', ModItems.COPPER_COIN)
+                        .unlockedBy("has_copper_coin",has(ModItems.COPPER_COIN)).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GOLD_COIN.get())
+                .pattern("xx")
+                .pattern("xx")
+                .define('x', ModItems.IRON_COIN)
+                .unlockedBy("has_iron_coin",has(ModItems.IRON_COIN)).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COIN16.get())
-                .pattern("XX")
-                .pattern("XX")
-                .define('X', ModItems.COIN4)
-                .unlockedBy("has_coin_4", has(ModItems.COIN4)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.DIAMOND_COIN.get())
+                .pattern("xx")
+                .pattern("xx")
+                .define('x', ModItems.GOLD_COIN)
+                .unlockedBy("has_gold_coin",has(ModItems.GOLD_COIN)).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.EMERALD_COIN.get())
+                .pattern("xx")
+                .pattern("xx")
+                .define('x', ModItems.DIAMOND_COIN)
+                .unlockedBy("has_diamond_coin",has(ModItems.DIAMOND_COIN)).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COIN64.get())
-                .pattern("XX")
-                .pattern("XX")
-                .define('X', ModItems.COIN16)
-                .unlockedBy("has_coin_16", has(ModItems.COIN16)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.NETHERITE_COIN.get())
+                .pattern("xx")
+                .pattern("xx")
+                .define('x', ModItems.EMERALD_COIN)
+                .unlockedBy("has_emerald_coin",has(ModItems.EMERALD_COIN)).save(recipeOutput);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.COPPER_COIN.get(), 4)
+                .requires(ModItems.IRON_COIN)
+                .unlockedBy("has_iron_coin", has(ModItems.IRON_COIN)).save(recipeOutput, "iron_coin_to_copper_coin");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COIN256.get())
-                .pattern("XX")
-                .pattern("XX")
-                .define('X', ModItems.COIN64)
-                .unlockedBy("has_coin_64", has(ModItems.COIN64)).save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.IRON_COIN.get(), 4)
+                .requires(ModItems.GOLD_COIN)
+                .unlockedBy("has_gold_coin", has(ModItems.GOLD_COIN)).save(recipeOutput, "gold_coin_to_iron_coin");
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GOLD_COIN.get(), 4)
+                .requires(ModItems.DIAMOND_COIN)
+                .unlockedBy("has_diamond_coin", has(ModItems.DIAMOND_COIN)).save(recipeOutput, "diamond_coin_to_gold_coin");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COIN1024.get())
-                .pattern("XX")
-                .pattern("XX")
-                .define('X', ModItems.COIN256)
-                .unlockedBy("has_coin_256", has(ModItems.COIN256)).save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.DIAMOND_COIN.get(), 4)
+                .requires(ModItems.EMERALD_COIN)
+                .unlockedBy("has_emerald_coin", has(ModItems.EMERALD_COIN)).save(recipeOutput, "emerald_coin_to_diamond_coin");
 
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.COIN1.get(), 4)
-                .requires(ModItems.COIN4)
-                .unlockedBy("has_coin_4", has(ModItems.COIN4)).save(recipeOutput, "coin4_to_coin1");
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.COIN4.get(), 4)
-                .requires(ModItems.COIN16)
-                .unlockedBy("has_coin_16", has(ModItems.COIN4)).save(recipeOutput, "coin16_to_coin4");
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.COIN16.get(), 4)
-                .requires(ModItems.COIN64)
-                .unlockedBy("has_coin_64", has(ModItems.COIN64)).save(recipeOutput, "coin64_to_coin16");
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.COIN64.get(), 4)
-                .requires(ModItems.COIN256)
-                .unlockedBy("has_coin_256", has(ModItems.COIN256)).save(recipeOutput, "coin256_to_coin64");
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.COIN256.get(), 4)
-                .requires(ModItems.COIN1024)
-                .unlockedBy("has_coin_1024", has(ModItems.COIN1024)).save(recipeOutput, "coin1024_to_coin256");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.EMERALD_COIN.get(), 4)
+                .requires(ModItems.NETHERITE_COIN)
+                .unlockedBy("has_netherite_coin", has(ModItems.NETHERITE_COIN)).save(recipeOutput, "netherite_coin_to_emerald_coin");
 
 
-        oreBlasting(recipeOutput, COIN_SMELTABLES, RecipeCategory.MISC, Items.IRON_NUGGET, 0.25f,200,"coin");
+
+        oreBlasting(recipeOutput, IRON_COIN_SMELTABLES, RecipeCategory.MISC, Items.IRON_NUGGET, 0.25f,200,"coin");
+        oreBlasting(recipeOutput, GOLD_COIN_SMELTABLES, RecipeCategory.MISC, Items.GOLD_NUGGET, 0.25f,200,"coin");
 
 
 
